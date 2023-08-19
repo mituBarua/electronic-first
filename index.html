@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./output/main.css" />
+    <title>Electronic First</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <nav class="nav-items">
+          <div class="logo">
+            <img src="./assets//logo.webp" />
+          </div>
+          <ul>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Preorder</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Support 24/7</a></li>
+          </ul>
+          <div class="right-side">
+            <img src="./assets/shopping-cart.png" />
+            <img src="./assets/user.png" />
+          </div>
+        </nav>
+      </div>
+
+      <div class="child-menu">
+        <div class="game-list" id="game-list">
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/monitor.png" />
+              PC
+            </a>
+            <ul class="dropdown-menu">
+              <div class="submenu-title">
+                <span>Platform</span>
+                <span>View All</span>
+              </div>
+              <div class="submenu-list">
+              <li><a class="dropdown-item" href="#"><img src="./assets/steam.png"/> Steam</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./assets/en-ubisoft-connect-logo.jpg"/> Ubisoft Connect</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./assets/ea-app.webp"/> EA App</a></li>
+              <li><a class="dropdown-item" href="#"> <img src="./assets/unnamed.png"/> Battle.net</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./assets/Rockstar_Games_Logo.svg.png"/> Rockstar</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./assets/gog.png"/> GOG.com</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./assets/ms.jpeg"/> Microsoft Store</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./assets/Epic!_Logo.png"/> Epic</a></li>
+              </div>
+             
+              <div class="submenu-title">
+                <span>Prepaid Cards</span>
+                <span>View All</span>
+              </div>
+              <div class="down-menu">
+                <div>
+                  <li><img src="./assets/steam2.png"/> STEAM</li>
+                  <span>steam gift cards</span>
+                </div>
+                <div>
+                  <li><img src="./assets/gift.png"/> </li>
+                  <span>IG gift cards</span>
+                </div>
+                <div>
+                  <li><img src="./assets/gift.png"/> </li>
+                  <span>Bizzard gift cards</span>
+                </div>
+              </div>
+              >
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/playstation-logotype.png" />
+              Playstation
+            </a>
+          
+          </div>
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/xbox-logo.png" />
+              XBox
+            </a>
+          
+          </div>
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/nintendo-switch.png" />
+              Nintendo
+            </a>
+         
+          </div>
+          <div class="search">
+            <button onclick="searchAppear()">
+              <img src="./assets/search.png" />
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="search-input" id="search-input">
+        <form>
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="Minecraft,RFG,Multiplayer..." />
+              <button onclick="gameListAppear()" type="reset">X</button>
+          </div>
+      </form>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="banner-text">
+        <p>In 15 days</p>
+        <h4>
+          Starfield Digital Premium<br />
+          Edition + Early Access
+        </h4>
+        <div class="amount">
+          <div class="btn">
+            <span>-25%</span>
+          </div>
+          <div class="total-amount">
+            <span>74.89€</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container game-category">
+      <div>
+        <div class="game-trend">
+          <h4>Trending</h4>
+          <button>View all</button>
+        </div>
+
+        <div class="game-trend-row">
+          <!-- <div class="col-md-4"> -->
+            <div class="game-img">
+              <img src="./assets/game-1.jpeg" />
+              <div class="btn">
+                <span>-25%</span>
+              </div>
+              <div class="game-desc">
+                <p>Sengoku Dynasty</p>
+                <span>19.99€</span>
+              </div>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="col-md-4"> -->
+            <div class="game-img">
+              <img src="./assets/download.jpeg" />
+              <div class="btn">
+                <span>-25%</span>
+              </div>
+              <div class="game-desc">
+                <p>Sengoku Dynasty</p>
+                <span>19.99€</span>
+              </div>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="col-md-4"> -->
+            <div class="game-img">
+              <img src="./assets/game-3.jpeg" />
+              <div class="btn">
+                <span>-25%</span>
+              </div>
+              <div class="game-desc">
+                <p>Sengoku Dynasty</p>
+                <span>19.99€</span>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
